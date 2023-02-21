@@ -9,9 +9,10 @@
     "patch:js-deep-patch": "cd packages/js-deep-patch && npm version patch && cd ../.. && nx build js-deep-patch && cd dist/packages/js-deep-patch && npm publish",
     "verify:js-deep-patch": "nx run-many --targets=lint,test,build --projects=js-deep-patch",
     "release:js-deep-patch": "npm run verify:js-deep-patch && npm run patch:js-deep-patch",
-    "patch:rxjs-state-store": "cd packages/rxjs-state-store && npm version patch && cd ../.. && nx build rxjs-state-store && cd dist/packages/rxjs-state-store && npm publish",
+    "patch:rxjs-state-store": "cd packages/rxjs-state-store && npm version patch && cd ../..",
+    "publish:rxjs-state-store": "nx build rxjs-state-store && cd dist/packages/rxjs-state-store && npm publish",
     "verify:rxjs-state-store": "nx run-many --targets=lint,test,build --projects=rxjs-state-store",
-    "release:rxjs-state-store": "npm run verify:rxjs-state-store && npm run patch:rxjs-state-store"
+    "release:rxjs-state-store": "npm run verify:rxjs-state-store && npm run patch:rxjs-state-store && npm run publish:rxjs-state-store"
   },
   "private": true,
   "dependencies": {

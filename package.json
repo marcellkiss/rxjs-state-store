@@ -2,9 +2,20 @@
   "name": "rxjs-state-store",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint:js-deep-patch": "nx lint js-deep-patch",
+    "build:js-deep-patch": "nx build js-deep-patch",
+    "test:js-deep-patch": "nx test js-deep-patch",
+    "patch:js-deep-patch": "cd packages/js-deep-patch && npm version patch && cd ../.. && nx build js-deep-patch && cd dist/packages/js-deep-patch && npm publish",
+    "verify:js-deep-patch": "nx run-many --targets=lint,test,build --projects=js-deep-patch",
+    "release:js-deep-patch": "npm run verify:js-deep-patch && npm run patch:js-deep-patch",
+    "patch:rxjs-state-store": "cd packages/rxjs-state-store && npm version patch && cd ../.. && nx build rxjs-state-store && cd dist/packages/rxjs-state-store && npm publish",
+    "verify:rxjs-state-store": "nx run-many --targets=lint,test,build --projects=rxjs-state-store",
+    "release:rxjs-state-store": "npm run verify:rxjs-state-store && npm run patch:rxjs-state-store"
+  },
   "private": true,
   "dependencies": {
+    "rxjs": "^7.8.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {

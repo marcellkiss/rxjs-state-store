@@ -1,5 +1,5 @@
 {
-  "name": "@rxjs-state-store/rxjs-state-store",
+  "name": "rxjs-state-store",
   "version": "0.0.1",
   "type": "commonjs"
 }

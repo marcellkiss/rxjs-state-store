@@ -1,5 +1,9 @@
 {
-  "name": "@rxjs-state-store/js-deep-patch",
-  "version": "0.0.1",
-  "type": "commonjs"
+  "name": "js-deep-patch",
+  "version": "0.0.4",
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

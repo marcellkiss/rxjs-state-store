@@ -15,12 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@rxjs-state-store/js-deep-patch": [
-        "packages/js-deep-patch/src/index.ts"
-      ],
-      "@rxjs-state-store/rxjs-state-store": [
-        "packages/rxjs-state-store/src/index.ts"
-      ]
+      "js-deep-patch": ["packages/js-deep-patch/src/index.ts"],
+      "rxjs-state-store": ["packages/rxjs-state-store/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

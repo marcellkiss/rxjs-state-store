@@ -1,6 +1,6 @@
 {
   "name": "rxjs-state-store",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "commonjs",
   "repository": {
     "type": "git",
@@ -20,10 +20,8 @@
     "url": "https://github.com/marcellkiss/rxjs-state-store/issues"
   },
   "homepage": "https://github.com/marcellkiss/rxjs-state-store",
-  "dependencies": {
-    "js-deep-patch": "^0.0.4"
-  },
   "peerDependencies": {
+    "js-deep-patch": "^0.0.4",
     "rxjs": ">=6.0.0"
   }
 }

@@ -1,5 +1,29 @@
 {
   "name": "rxjs-state-store",
-  "version": "0.0.2",
-  "type": "commonjs"
+  "version": "0.0.3",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcellkiss/rxjs-state-store"
+  },
+  "keywords": [
+    "rxjs",
+    "state",
+    "store",
+    "simple state handling with rxjs",
+    "handle objects rxjs",
+    "handle arrays rxjs"
+  ],
+  "author": "Marcell Kiss <hello@marcell.tech> (https://marcell.tech/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcellkiss/rxjs-state-store/issues"
+  },
+  "homepage": "https://github.com/marcellkiss/rxjs-state-store",
+  "dependencies": {
+    "js-deep-patch": "^0.0.4"
+  },
+  "peerDependencies": {
+    "rxjs": ">=6.0.0"
+  }
 }
